@@ -1,8 +1,16 @@
 # depslib dependency file v1.0
-1523211463 source:/home/augusto/Publico/mis ejercicios/tp_01/main.c
+1523106687 source:/home/augusto/Publico/mis ejercicios/tp_01/main.c
+	<stdio.h>
+
+1535465330 source:c:\users\aumaza_mecon\documents\test\tp_01\main.c
 	<stdio.h>
 	<stdlib.h>
 	"funciones.h"
 
-1523211513 /home/augusto/Publico/mis ejercicios/tp_01/funciones.h
+1535470364 c:\users\aumaza_mecon\documents\test\tp_01\funciones.h
+
+1535478104 source:c:\users\aumaza_mecon\documents\test\tp_01\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
 

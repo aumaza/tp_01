@@ -2,19 +2,14 @@
 #include <stdlib.h>
 #include "funciones.h"
 
-
-
 int main()
 
 {
 
 
-menu();
+menuGeneral();
 
 return 0;
 
 }
-
-
-
 
