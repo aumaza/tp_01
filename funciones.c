@@ -5,24 +5,54 @@
 /*Implementamos la funcion menu.-*/
 
 
-void menuGeneral()
+int menuGeneral()
 {
 system("cls");
+system("clear");
 
 int opc;
 float num1;
 float num2;
+int ok;
+int ch;
 
-printf("\nIngresar 1er Operando (A): ");
-scanf("%f", &num1);
+do
+    {
+      printf("\nIngresar 1er Operando (A): ");
+      fflush(stdout);
 
-printf("\nIngressar 2do Operando (B): ");
-scanf("%f", &num2);
+      if ((ok = scanf("%f", &num1)) == EOF)
+        {
+
+            return 1;
+
+        }
+
+        printf("\nIngresar 2do Operando (B): ");
+        fflush(stdout);
+
+        if ((ok = scanf("%f", &num2)) == EOF)
+        {
+            return 1;
+        }
 
 
+      if ((ch = getchar()) != '\n')
+      {
+         ok = 0;
+
+         while ((ch = getchar()) != EOF && ch != '\n');
+      }
+   }while(!ok);
+
+// fin del ingreso de valores
 
 do{
 system("cls");
+system("clear");
+
+int ok;
+int ch;
 
 printf("\n======================================");
 printf("\nSeleccione la Operacion a Realizar");
@@ -37,11 +67,26 @@ printf("\n4. Calcular la Multiplicacion (A*B)");
 printf("\n5. Calcular el Factorial (A!) (B!)");
 printf("\n6. Reiniciar");
 printf("\n7. Salir");
-printf("\n\n======================================");
-printf("\nOpcion: ");
-scanf("%d", &opc);
-printf("\n======================================");
+printf("\n\n======================================\n");
 
+
+
+do
+    {
+      printf("\nOpcion: ");
+      fflush(stdout);
+      if ((ok = scanf("%d", &opc)) == EOF)
+         return EXIT_FAILURE;
+
+
+      if ((ch = getchar()) != '\n')
+      {
+         ok = 0;
+
+         while ((ch = getchar()) != EOF && ch != '\n');
+      }
+   }while(!ok);
+printf("\n======================================\n");
 
 switch(opc)
 {
@@ -55,12 +100,15 @@ case 6: menuGeneral(); break;
 }
 }while(opc != 7);
 
+return 0;
+
 }
 /*generamos la funcion sumar.-*/
 
 int sumar(float a, float b)
 {
 system("cls");
+system("clear");
 
 float suma;
 
@@ -73,6 +121,8 @@ printf("\n======================================\n");
 
 system("pause");
 system("cls");
+getchar();
+system("clear");
 
 return suma;
 
@@ -86,6 +136,7 @@ return suma;
 int restar(float a, float b)
 {
 system("cls");
+system("clear");
 
 float resta=0;
 
@@ -97,6 +148,8 @@ printf("\n======================================\n");
 
 system("pause");
 system("cls");
+getchar();
+system("clear");
 
 return resta;
 
@@ -106,6 +159,7 @@ return resta;
 
 int dividir(float a, float b){
 system("cls");
+system("clear");
 
 float div=0;
 
@@ -126,6 +180,8 @@ printf("\n=========================================\n");
 }
 system("pause");
 system("cls");
+getchar();
+system("clear");
 
 return div;
 
@@ -138,17 +194,20 @@ return div;
 int multiplicar(float a, float b)
 {
 system("cls");
+system("clear");
 
 float mult=0;
 
 mult = a * b;
 
-printf("============================================");
+printf("=========================================");
 printf("\nEl resultado de A*B es: %.2f", mult);
 printf("\n============================================\n");
 
 system("pause");
 system("cls");
+getchar();
+system("clear");
 
 return mult;
 
@@ -159,6 +218,7 @@ return mult;
 int factorial(float a, float b)
 {
 system("cls");
+system("clear");
 
     int i;
     float valor1=a;
@@ -186,6 +246,8 @@ system("cls");
 
 system("pause");
 system("cls");
+getchar();
+system("clear");
 
     return 0;
 }

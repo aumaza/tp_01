@@ -1,7 +1,7 @@
 #ifndef FUNCIONES_H_INCLUDED
 #define FUNCIONES_H_INCLUDED
 
-void menuGeneral();
+int menuGeneral();
 int sumar(float a, float b);
 int restar(float a, float b);
 int dividir(float a, float b);
