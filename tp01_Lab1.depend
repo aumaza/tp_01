@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1536086885 source:c:\users\aumaza_mecon\documents\test\tp01_lab1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1536342203 c:\users\aumaza_mecon\documents\test\tp01_lab1\funciones.h
+
+1536170671 source:c:\users\aumaza_mecon\documents\test\tp01_lab1\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
